@@ -1,0 +1,13 @@
+html {
+    --bg1: #182227;
+    --bg2: #253238;
+    --text-color1: #fff;
+    --header-height: 5rem;
+
+    font-size: 10px;
+
+    font-family: 'Sora', sans-serif;
+}
+
+html[data-theme="theme-light"] {
+}
