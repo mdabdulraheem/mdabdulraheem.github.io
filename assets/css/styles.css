@@ -65,7 +65,7 @@ html {
   --header-height: 5rem;
   --hero-filter: grayscale(1);
   --border-rad: .4rem;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'Sora', sans-serif;
   font-weight: 200;
 }
@@ -529,12 +529,6 @@ p {
           transform: translateX(10%);
 }
 
-@media screen and (max-width: 768px) {
-  html {
-    font-size: 10px;
-  }
-}
-
 @media screen and (max-width: 320px) {
   html {
     font-size: 8px;
@@ -543,19 +537,19 @@ p {
 
 @media screen and (min-width: 1600px) {
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   html {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media screen and (min-width: 2561px) {
   html {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
