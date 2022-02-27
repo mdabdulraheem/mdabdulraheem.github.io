@@ -6,7 +6,7 @@
         color: var(--text-color1);
         @include flexCenter();
         justify-content: flex-start;
-        padding-left: 1rem;
+        padding-left: 2rem;
 
         .menu-icon {
             height: 4rem;
@@ -28,7 +28,7 @@
                 position: absolute;
                 opacity: 1;
                 transition: .25s all ease-in-out;
-                border-radius: .5rem;
+                border-radius: var(--border-rad);
             }
             div:nth-child(1) {
                 top: 1rem;
@@ -64,9 +64,9 @@
             .hero-img {
                 border-radius: 50%;
                 background: rgba( 255, 255, 255, 0.25 );
-                box-shadow: 0 0px 32px 0 rgba(255, 255, 255, 0.37);
-                backdrop-filter: blur( 4px );
-                -webkit-backdrop-filter: blur( 4px );
+                box-shadow: 0 0px 3.2rem 0 rgb(0, 0, 0);
+                backdrop-filter: blur( .4rem );
+                -webkit-backdrop-filter: blur( .4rem );
                 width: 25rem;
                 height: 25rem;
                 animation: rotate 5s linear infinite;
@@ -74,6 +74,7 @@
                 img {
                     border-radius: 50%;
                     width: 100%;
+                    filter: var(--hero-filter);
                 }
             }
 
@@ -83,11 +84,12 @@
                 a {
                     display: inline-block;
                     transition: .5s ease-in-out;
+                    filter: grayscale(1);
                     img {
                         width: 4rem;
-                        background: #fff;
+                        background: var(--white);
                         margin-right: 1rem;
-                        border-radius: .4rem;
+                        border-radius: var(--border-rad);
                         padding: .5rem;
                     }
 
@@ -103,15 +105,49 @@
             .skills-images {
                 @include flexCenter();
                 flex-wrap: wrap;
+                filter: grayscale(1);
 
                 img {
                     &.skill {
-                        width: 6rem;
+                        height: 6rem;
+                        width: auto;
+                        max-width: 6rem;
                         padding: 1rem;
-                        border-radius: 0.4rem;
+                        border-radius: var(--border-rad);
                         // background: linear-gradient(45deg, #4e6068, transparent);
-                        background: #ffffff;
+                        background: var(--white);
                         margin: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        &.projects {
+            .projects-container {
+                @include flexCenter();
+                gap: 5rem;
+                flex-wrap: wrap;
+                align-items: stretch;
+
+                .project-card {
+                    text-decoration: none;
+                    color: unset;
+                    background: var(--project-card);
+                    border-radius: var(--border-rad);
+                    width: 30rem;
+                    padding: 1rem;
+                    color: var(--text-color1);
+                    transition: 0.3s ease-in-out all;
+                    // box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.5);
+                    box-shadow: 0 0px 3.2rem 0 rgb(0, 0, 0);
+
+                    img {
+                        width: 100%;
+                        filter: grayscale(1);
+                    }
+
+                    &:hover {
+                        transform: scale(1.05);
                     }
                 }
             }
@@ -130,11 +166,12 @@
                 a {
                     display: inline-block;
                     transition: .5s ease-in-out;
+                    filter: grayscale(1);
                     img {
                         width: 4rem;
-                        background: #fff;
+                        background: var(--white);
                         margin-right: 1rem;
-                        border-radius: .4rem;
+                        border-radius: var(--border-rad);
                         padding: .5rem;
                     }
 

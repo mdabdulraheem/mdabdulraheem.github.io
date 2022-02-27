@@ -12,12 +12,19 @@ figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
     box-sizing: border-box;
-    letter-spacing: 1px;
+    letter-spacing: .1rem;
 }
 
 h1 {
-    font-size: 3.6rem;
-    font-weight: 500;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
     margin: 1rem 0;
 }
 
@@ -57,4 +64,11 @@ p {
         transform: rotate(360deg);
     }
 
+}
+
+
+                
+.animate-blink {
+    animation: blink 1s linear infinite;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
 }

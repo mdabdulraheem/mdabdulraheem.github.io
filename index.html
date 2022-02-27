@@ -16,17 +16,16 @@
     <div id="container">
         <nav id="navigation">
             <ul>
-                <li><a href="#intro"><span class="blink">_</span>intro</a></li>
-                <li><a href="#about"><span class="blink">_</span>about</a></li>
-                <li><a href="#skills"><span class="blink">_</span>skills</a></li>
-                <!-- <li><a href="#projects"><span class="blink">_</span>projects</a></li> -->
-                <li><a href="#contact"><span class="blink">_</span>contact</a></li>
+                <li><a class="nav-link" href="#intro"><span class="animate-blink">_</span>intro</a></li>
+                <li><a class="nav-link" href="#about"><span class="animate-blink">_</span>about</a></li>
+                <li><a class="nav-link" href="#skills"><span class="animate-blink">_</span>skills</a></li>
+                <li><a class="nav-link" href="#projects"><span class="animate-blink">_</span>projects</a></li>
+                <li><a class="nav-link" href="#contact"><span class="animate-blink">_</span>contact</a></li>
             </ul>
         </nav>
         <div class="content-section">
             <header class="header">
-                <!-- <img class="menu-icon" src="assets/images/menu-fold-line.png" alt="Menu button"> -->
-                <div class="hamburger open">
+                <div class="hamburger">
                     <div></div>
                     <div></div>
                     <div></div>
@@ -37,48 +36,126 @@
 
                 <section class="section intro" id="intro">
                     <div class="hero-img">
-                        <img src="https://i.picsum.photos/id/988/200/200.jpg?hmac=-lwK-i6PssD9WlUeVPDIhOxDVxlzJKeM4MgEx_fIqJg"
-                        alt="Abdul Raheem Image" />
+                        <img src="assets/images/hero2.jpg"
+                            alt="Abdul Raheem's Image" />
                     </div>
                     
-                    <h1>Hi!, I AM ABDUL RAHEEM</h1>
-                    <h3>Software Engineer</h3>
+                    <h1><span class="animate-blink">_</span>Hi!, I AM ABDUL RAHEEM</h1>
+                    <h3>I write code.</h3>
                     <div class="contact-links">
-                        <a href="https://linkedin.com" target="_blank"><img src="assets/images/icons/linkedin.svg" alt="Linkedin Profile" /></a>
-                        <a href="https://github.io" target="_blank"><img src="assets/images/icons/github.svg" alt="Github Profile" /></a>
-                        <a href="mailto:mohdraheem68@gmail.com" target="_blank"><img src="assets/images/icons/mail.svg" alt="Email Address" /></a>
+                        <a href="https://www.linkedin.com/in/mohammed-abdul-raheem/" target="_blank">
+                            <img src="assets/images/icons/linkedin.svg" alt="Abdul Raheem's Linkedin Profile" />
+                        </a>
+                        <a href="https://github.com/mdabdulraheem" target="_blank">
+                            <img src="assets/images/icons/github.svg" alt="Abdul Raheem's Github Profile" />
+                        </a>
+                        <a href="mailto:mohdraheem68@gmail.com" target="_blank">
+                            <img src="assets/images/icons/mail.svg" alt="Abdul Raheem's Email Address" />
+                        </a>
                     </div>
                 </section>
 
                 <section class="section about" id="about">
-                    <p>I am a Software Engineer, able to build a Web presence from the ground up - from concept, navigation, layout and programming to UX and SEO. Skilled at writing well-designed, testable and efficient code using current best practices in Software Development Industry. Fast learner, hard worker and team player who is proficient in an array of scripting languages and multimedia Web tools.</p>
+                    <h2><span class="animate-blink">_</span>Who Am I?</h2>
+                    <p>
+                        A Software Engineer with experience in developing web applications. 
+                        Able to build web presence from ground up - from concept, requirement analysis to design and impementation. 
+                        Skilled at writing well-designed, testable and efficient code using current best practices in Software Development Industry.
+                    </p>
+
+                    <p>
+                        My interest in computers goes back to my school days when I first used the 
+                        MS-Paint application on Windows XP Operating system. 
+                        I was so fascinated and this experience triggered a curiosity inside me 
+                        to understand how computers are able to do this.
+                    </p>
+                    <!-- TODO: Maybe add the "People who love to eat are always the best people." Quote -->
+                    <p>
+                        Apart from work, I like to travel and explore new places. 
+                        I am a foodie, loves to try out the delicious food.
+                        I also like to volunteer for an NGO whenever I can.
+                    </p>
                 </section>
 
                 <section class="section skills" id="skills">
+                    <h2><span class="animate-blink">_</span>Skills</h2>
                     <p>
-                        I am not tied to any particular tech stack. Depending on the goal, I build awesome applications using current best practices.
+                        I am not biased towards any particular tech stack. Depending on the goal, I build awesome user interfaces using current best practices.
+                        Having said that, following are the technologies/frameworks that I work with.
                     </p>
                     <div class="skills-images">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill" title="Javascript">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
-                        <img src="assets/images/skills/javascript.png" alt="Javascript" class="skill">
+                        <!-- TODO: Create custom tooltips -->
+
+                        <!-- Divide technologies into diff sections like Frontend, Backend & Collab -->
+                        <!-- Frontend -->
+                        <img src="assets/images/skills/javascript.svg" class="skill" alt="Javascript" title="Javascript">
+                        <img src="assets/images/skills/typescript.svg" class="skill" alt="Typescript" title="Typescript">
+                        <img src="assets/images/skills/react.svg" class="skill" alt="ReactJs" title="ReactJs">
+                        <img src="assets/images/skills/redux.svg" class="skill" alt="Redux" title="Redux">
+                        <img src="assets/images/skills/angular.svg" class="skill" alt="Angular" title="Angular">
+                        <img src="assets/images/skills/bootstrap.svg" class="skill" alt="Redux" title="Redux">
+                        <img src="assets/images/skills/sass.svg" class="skill" alt="Sass" title="Sass">
+                        <img src="assets/images/skills/chartjs.svg" class="skill" alt="ChartJs" title="ChartJs">
+                        <img src="assets/images/skills/html.svg" class="skill" alt="html" title="html">
+                        <img src="assets/images/skills/css.svg" class="skill" alt="css" title="css">
+
+                        <!-- Backend -->
+                        <img src="assets/images/skills/nodejs.svg" class="skill" alt="Nodejs" title="Nodejs">
+                        <img src="assets/images/skills/mysql.svg" class="skill" alt="MYSQL" title="MYSQL">
+                        <img src="assets/images/skills/mongodb.svg" class="skill" alt="MongoDB" title="MongoDB">
+
+                        <!-- Collab -->
+                        <img src="assets/images/skills/git.svg" class="skill" alt="Git" title="Git">
+                        <img src="assets/images/icons/github.svg" class="skill" alt="Github" title="Github">
+                        <img src="assets/images/skills/jira.svg" class="skill" alt="Jira" title="Jira">
+                        <img src="assets/images/skills/slack.svg" class="skill" alt="Slack" title="Slack">
+                        <img src="assets/images/skills/zoom.svg" class="skill" alt="Zoom" title="Zoom">
+                    </div>
+
+                    <!-- TODO: Add another section like "Code Management & Collab Tools:" -->
+                </section>
+
+                <section class="section projects" id="projects">
+                    <h2><span class="animate-blink">_</span>Projects</h2>
+                    <p>Side projects that I did as part of learning.</p>
+                    <div class="projects-container">
+                        <a target="_target" href="https://mdabdulraheem.github.io/algo-visualizer" class="project-card">
+                            <img src="assets/images/projects/algovisualiser.svg" />
+                            <h3>Algo Visualiser</h3>
+                            <p>Visualisation for different algorithms.</p>
+                        </a>
+                        <a target="_target" href="http://cedrashadows.com" class="project-card">
+                            <img src="assets/images/projects/cedra.svg" />
+                            <h3>Cedra Shadows</h3>
+                            <p>Developed this brand website as part of a freelance project with smooth animations.</p>
+                        </a>
+                        <a target="_blank" href="https://mdabdulraheem.github.io/consuming-api-endpoint" class="project-card">
+                            <img src="assets/images/projects/image-search.svg" />
+                            <h3>Image Search</h3>
+                            <p>Implemented an image search engine that communicates with the unsplash api to retrieve images based on the user input.</p>
+                        </a>
+                        <a target="_blank" href="https://mdabdulraheem.github.io/RockPaperScissors" class="project-card">
+                            <img src="assets/images/projects/rockpaperscissors.svg" />
+                            <h3>Rock Paper Scissors</h3>
+                            <p>This is a simple Rock Paper Scissors game.</p>
+                        </a>
                     </div>
                 </section>
 
                 <section class="section contact" id="contact">
                     <div class="contacts-container">
+                        <h2><span class="animate-blink">_</span>Let's talk</h2>
                         <p>You can find me here.</p>
                         <div class="contact-links">
-                            <a href="https://linkedin.com" target="_blank"><img src="assets/images/icons/linkedin.svg" alt="Linkedin Profile" /></a>
-                            <a href="https://github.io" target="_blank"><img src="assets/images/icons/github.svg" alt="Github Profile" /></a>
-                            <a href="mailto:mohdraheem68@gmail.com" target="_blank"><img src="assets/images/icons/mail.svg" alt="Email Address" /></a>
+                            <a href="https://www.linkedin.com/in/mohammed-abdul-raheem/" target="_blank">
+                                <img src="assets/images/icons/linkedin.svg" alt="Abdul Raheem's Linkedin Profile" />
+                            </a>
+                            <a href="https://github.com/mdabdulraheem" target="_blank">
+                                <img src="assets/images/icons/github.svg" alt="Abdul Raheem's Github Profile" />
+                            </a>
+                            <a href="mailto:mohdraheem68@gmail.com" target="_blank">
+                                <img src="assets/images/icons/mail.svg" alt="Abdul Raheem's Email Address" />
+                            </a>
                         </div>
                     </div>
                     <div class="footer">

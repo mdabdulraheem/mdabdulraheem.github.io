@@ -20,11 +20,6 @@
                     opacity: 0.7;
                     transform: translateX(10%);
                 }
-                
-                .blink {
-                    animation: blink 1s linear infinite;
-                    animation: name duration timing-function delay iteration-count direction fill-mode;
-                }
             }
         }
     }

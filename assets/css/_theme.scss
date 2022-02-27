@@ -1,12 +1,17 @@
 html {
     --bg1: #182227;
     --bg2: #253238;
-    --text-color1: #fff;
+    --text-color1: #ccc;
+    --text-color2: #808080; // dark(50% white)
+    --white: #fff;
+    --project-card: #364146;
     --header-height: 5rem;
+    --hero-filter: grayscale(1);
+    --border-rad: .4rem;
 
-    font-size: 10px;
-
+    font-size: 12px;
     font-family: 'Sora', sans-serif;
+    font-weight: 200;
 }
 
 html[data-theme="theme-light"] {
